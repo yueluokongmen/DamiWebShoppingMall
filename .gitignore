@@ -1,0 +1,28 @@
+# --- IDEA / VSCode 配置文件 (必须忽略) ---
+.idea/
+*.iml
+.vscode/
+
+# --- 后端 (Java/Spring Boot) ---
+mall-backend/target/
+mall-backend/*.log
+*.class
+*.jar
+*.war
+sql/
+server.log
+
+# --- 敏感配置文件 (含密码/密钥/公网IP，禁止提交) ---
+mall-backend/src/main/resources/application-prod.yml
+mall-backend/src/main/resources/application-dev.yml
+mall-frontend/.env.production
+
+# --- 前端 (Vue/Node) ---
+mall-frontend/node_modules/
+mall-frontend/dist/
+mall-frontend/dist*/
+mall-frontend/*.zip
+mall-frontend/npm-debug.log*
+mall-frontend/yarn-debug.log*
+mall-frontend/yarn-error.log*
+.DS_Store
